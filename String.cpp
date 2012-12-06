@@ -20,6 +20,14 @@ String& String::operator+= ( char c ){
   return (*this) += String(temp);
 }
 
+void String::clear(){
+  if( space_ >= 1 ){
+    length_ = 0;
+    str_[0] = '\0';
+  }
+  else init("");
+}
+
 String& String::operator= ( const String& str ){
   String temp(str);
   swap(temp);

@@ -29,7 +29,7 @@ class String
     String& operator+= ( const String& str );
     String& operator+= ( const char* s ){ return (*this) += String(s); }
     String& operator+= ( char c );
-    void clear(){ init(""); }
+    void clear();
     String& operator= ( const String& str );
     String& operator= ( const char* s ){ return (*this = String(s)); }
     String& operator= ( char c );
