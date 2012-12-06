@@ -36,6 +36,7 @@ class String
     void swap( String& str );
 
     static const char END_OF_STRING;
+    static const int EOS_LENGTH;
 
   private:
     void init(const char s[]);

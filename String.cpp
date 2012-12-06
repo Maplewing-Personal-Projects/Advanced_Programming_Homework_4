@@ -5,9 +5,10 @@
 using namespace std;
 
 const char String::END_OF_STRING = '\0';
+const int String::EOS_LENGTH = 1;
 
 String& String::operator+= ( const String& str ){
-  if( length_ + str.length_ + 1 <= space_ ){
+  if( length_ + str.length_ + EOS_LENGTH <= space_ ){
     length_ = length_ + str.length_;
     strcat( str_, str.str_ );
     return *this;
@@ -21,9 +22,9 @@ String& String::operator+= ( char c ){
 }
 
 void String::clear(){
-  if( space_ >= 1 ){
+  if( space_ >= EOS_LENGTH ){
     length_ = 0;
-    str_[0] = '\0';
+    str_[0] = END_OF_STRING;
   }
   else init("");
 }
@@ -47,7 +48,7 @@ void String::swap( String& str ){
 
 void String::init(const char s[]){
   length_ = strlen(s);
-  space_ = length_+1;
+  space_ = length_+EOS_LENGTH;
   str_ = new char[space_];
   strcpy( str_, s );
 }
@@ -69,7 +70,7 @@ std::ostream& operator<< (std::ostream& os, const String& str){
 }
 
 String operator+ (const String& lhs, const String& rhs){
-  char *temp = new char[lhs.length_ + rhs.length_ + 1];
+  char *temp = new char[lhs.length_ + rhs.length_ + String::EOS_LENGTH];
   strcpy( temp, lhs.str_ );
   strcat( temp, rhs.str_ );
 
