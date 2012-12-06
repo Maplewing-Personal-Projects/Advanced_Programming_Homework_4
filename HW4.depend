@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1354780167 source:c:\users\csie\desktop\hw4\main.cpp
+	<iostream>
+	"String.h"
+
+1354779311 c:\users\csie\desktop\hw4\string.h
+	<iosfwd>
+	<cstring>
+
+1354779521 source:c:\users\csie\desktop\hw4\string.cpp
+	<iostream>
+	<cstring>
+	<algorithm>
+	"String.h"
+
