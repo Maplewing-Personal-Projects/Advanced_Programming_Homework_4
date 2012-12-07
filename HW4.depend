@@ -13,15 +13,16 @@
 	<algorithm>
 	"String.h"
 
-1354808786 source:c:\users\lanyiknight\documents\homework\advanced_programming\advanced_programming_homework_4\main.cpp
+1354880948 source:c:\users\lanyiknight\documents\homework\advanced_programming\advanced_programming_homework_4\main.cpp
 	<iostream>
+	<cstring>
 	"String.h"
 
-1354809528 c:\users\lanyiknight\documents\homework\advanced_programming\advanced_programming_homework_4\string.h
+1354880163 c:\users\lanyiknight\documents\homework\advanced_programming\advanced_programming_homework_4\string.h
 	<iosfwd>
 	<cstring>
 
-1354808925 source:c:\users\lanyiknight\documents\homework\advanced_programming\advanced_programming_homework_4\string.cpp
+1354879955 source:c:\users\lanyiknight\documents\homework\advanced_programming\advanced_programming_homework_4\string.cpp
 	<iostream>
 	<cstring>
 	<algorithm>
