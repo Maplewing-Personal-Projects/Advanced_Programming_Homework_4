@@ -21,11 +21,8 @@ String& String::operator+= ( char c ){
 }
 
 void String::clear(){
-  if( space_ >= EOS_LENGTH ){
-    length_ = 0;
-    str_[0] = END_OF_STRING;
-  }
-  else init("");
+  length_ = 0;
+  str_[0] = END_OF_STRING;
 }
 
 String& String::operator= ( const String& str ){
