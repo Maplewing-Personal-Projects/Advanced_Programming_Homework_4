@@ -2,7 +2,6 @@
 #include <cstring>
 #include <algorithm>
 #include "String.h"
-using namespace std;
 
 const char String::END_OF_STRING = '\0';
 const int String::EOS_LENGTH = 1;
