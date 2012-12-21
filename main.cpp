@@ -95,7 +95,16 @@ int main()
   
   cout << "Test String capacity:\n";
   String sonic("Sonic");
-  cout << "sonic: " << sonic.size() << ' ' << sonic.capacity() << endl;
+  cout << "sonic: " << sonic << ' ' << sonic.size() << ' ' << sonic.capacity() << endl;
+  sonic = sonic;
+  cout << "sonic: " << sonic << ' ' << sonic.size() << ' ' << sonic.capacity() << endl;
+  sonic = "Amy";
+  cout << "sonic: " << sonic << ' ' << sonic.size() << ' ' << sonic.capacity() << endl;
+  sonic = "Knuckles";
+  cout << "sonic: " << sonic << ' ' << sonic.size() << ' ' << sonic.capacity() << endl;
+  sonic = "Eggman";
+  cout << "sonic: " << sonic << ' ' << sonic.size() << ' ' << sonic.capacity() << endl;
+  
 
   return 0;
 }

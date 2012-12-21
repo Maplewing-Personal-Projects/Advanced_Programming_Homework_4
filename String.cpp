@@ -26,8 +26,16 @@ void String::clear(){
 }
 
 String& String::operator= ( const String& str ){
-  String temp(str);
-  swap(temp);
+  if( space_ >= str.length_ + EOS_LENGTH )
+  {
+    strcpy( str_, str.str_ );
+    length_ = str.length_;
+  }
+  else{
+    String temp(str);
+    swap(temp);
+  }
+  
   return *this;
 }
 
