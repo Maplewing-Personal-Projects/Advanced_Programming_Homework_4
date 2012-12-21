@@ -82,7 +82,7 @@ int main()
   cout << "u: " << u << endl;
   cout << "--------------------------------\n\n";
 
-  cout << "Test String operato+:\n";
+  cout << "Test String operator+:\n";
   cout << "s+t: " << s+t << endl;
   cout << "\"Sonic\"+s: " << "Sonic"+s << endl;
   cout << "\'X\'+s: " << 'X'+s << endl;
@@ -104,6 +104,7 @@ int main()
   cout << "sonic: " << sonic << ' ' << sonic.size() << ' ' << sonic.capacity() << endl;
   sonic = "Eggman";
   cout << "sonic: " << sonic << ' ' << sonic.size() << ' ' << sonic.capacity() << endl;
+  cout << "--------------------------------\n\n";
   
 
   return 0;
