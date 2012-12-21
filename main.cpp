@@ -92,6 +92,10 @@ int main()
   cout << "t: " << t << endl;
   cout << "u: " << u << endl;
   cout << "--------------------------------\n\n";
+  
+  cout << "Test String capacity:\n";
+  String sonic("Sonic");
+  cout << "sonic: " << sonic.size() << ' ' << sonic.capacity() << endl;
 
   return 0;
 }

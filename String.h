@@ -23,6 +23,7 @@ class String
     String(const char s[]){ init(s); }
     ~String(){ delete [] str_; }
     size_t size() const{ return length_; }
+    size_t capacity() const{ return space_; }
     const char* c_str() const{ return str_; }
     const char& operator[] ( size_t pos ) const{ return str_[pos]; }
     char& operator[] ( size_t pos ){ return const_cast<char&>(static_cast<const String &>(*this)[pos]); }
